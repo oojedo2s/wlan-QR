@@ -15,7 +15,7 @@
     - debug: 
         msg: "Installed version is {{ qrenver.stdout }}"
     - name: Generate WLAN 2.4GHz QR code
-      command: qrencode -s 5 -o /home/pi/git/wlan-QR/wifi24.png 'WIFI:S:insert ssid;T:WPA2;P:insert password;;'
+      command: qrencode -s 5 -o [insert directory]/wifi24.png 'WIFI:S:[insert ssid];T:WPA2;P:[insert password];;'
     - name: Generate WLAN 5GHz QR code
-      command: qrencode -s 5 -o /home/pi/git/wlan-QR/wifi5.png 'WIFI:S:insert ssid;T:WPA2;P:insert password;;'
+      command: qrencode -s 5 -o [insert directory]/wifi5.png 'WIFI:S:[insert ssid];T:WPA2;P:[insert password];;'
     
