@@ -1,6 +1,6 @@
 ---
 - name: QR code setup
-  hosts: [insert host(s)]
+  hosts: target_host
   become: yes
   tasks:
     - name: Update all packages
